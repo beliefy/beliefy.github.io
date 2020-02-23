@@ -86,9 +86,35 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>//#include&lt;bits/stdc++.h&gt;<br>#include”yzy.h”</p>
-<p>using namespace std;<br>typedef unsigned long long ull;<br>int main()<br>{<br>    map&lt;ull,intmymap;<br>    int n;<br>    cin &gt;n;<br>    for (int i = 0; i &lt; n; i++)<br>    {<br>        pair&lt;ull, intp;<br>        cin &gt;p.first;<br>        p.second = 1;<br>        if (mymap.find(p.first)!=mymap.end())<br>        {<br>            mymap[p.first]++;<br>        }<br>        else<br>        {<br>            mymap.insert(p);<br>        }<br>    }<br>    for (map&lt;ull, int::iterator it = mymap.begin(); it != mymap.end(); ++it)<br>    {<br>        cout &lt;&lt; (<em>it).first &lt;&lt; “ “ &lt;&lt; (</em>it).second &lt;&lt; endl;<br>    }<br>    return 0;<br>}</p>
-
+        <pre><code>//#include&lt;bits/stdc++.h&gt;
+#include&quot;yzy.h&quot;
+using namespace std;
+typedef unsigned long long ull;
+int main()
+{
+    map&lt;ull,intmymap;
+    int n;
+    cin &gt;n;
+    for (int i = 0; i &lt; n; i++)
+    {
+        pair&lt;ull, intp;
+        cin &gt;p.first;
+        p.second = 1;
+        if (mymap.find(p.first)!=mymap.end())
+        {
+            mymap[p.first]++;
+        }
+        else
+        {
+            mymap.insert(p);
+        }
+    }
+    for (map&lt;ull, int::iterator it = mymap.begin(); it != mymap.end(); ++it)
+    {
+        cout &lt;&lt; (*it).first &lt;&lt; &quot; &quot; &lt;&lt; (*it).second &lt;&lt; endl;
+    }
+    return 0;
+}</code></pre>
       
     </div>
     <footer class="article-footer">
